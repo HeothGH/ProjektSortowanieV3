@@ -136,7 +136,7 @@
             this.groupBox2.Size = new System.Drawing.Size(150, 100);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Numbers amount";
+            this.groupBox2.Text = "Start elements amount";
             // 
             // amountNumeric
             // 
