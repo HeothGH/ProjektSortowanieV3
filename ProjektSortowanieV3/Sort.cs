@@ -67,13 +67,11 @@ namespace ProjektSortowanieV3
 
                 sBubble.Points.Add(d);
 
-                //ustawienie labelków dla osi X
                 chart.ChartAreas.First().AxisX.CustomLabels.Add(i - 0.5, i + 0.5, n.ToString());
                 i++;
 
                 n *= (int)multiplierNumeric.Value;
 
-                //zabezpiecznie przed zbyt długim działaniem ... pierwsza seria powyżej 1000ms przerywa pętlę
                 if (bs.Duration > 10000)
                 {
                     break;
@@ -82,7 +80,6 @@ namespace ProjektSortowanieV3
 
             chart.Series.Add(sBubble);
 
-            //dopasowanie skali a osiach wykresu
             chart.ChartAreas.First().RecalculateAxesScale();
         }
 
